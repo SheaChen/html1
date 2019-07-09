@@ -111,15 +111,60 @@ nav li a:hover {
     background-color: #1c036c;
 }
 .inner{
-    height: 420px;
+    height: 100%;
     position: relative;
 }
 .subnav{
     position: absolute;
-    z-index: 2;
     left: 0;
-    right: 0;
+    top: 0;
     height: 100%;
     width: 190px;
-    background:rgba(0,0,.3);
+    background:rgba(0, 0, 0, .3);
+    padding-top: 10px;
+}
+.subnav li{
+    padding-left: 20px;
+    position: relative;
+}
+.subnav a{
+    font-size: 15px;
+    color: #ffffff;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+}
+.subnav a:hover{
+    color: #00a4ff;
+}
+.subnav span{
+    position: absolute;
+    right: 20px;
+    top: 0;
+
+}
+.circle{
+    width: 176px;
+    height: 20px;
+    /*background-color: #fff;*/
+    position: absolute;
+    left: 50%;
+    margin-left: -88px;
+    bottom: 15px;
+}
+.circle i{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 0 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .3s;
+}
+/*.circle .current*/
+.circle i:hover{
+    width: 20px;
+    background-color: #fff;
+
 }
