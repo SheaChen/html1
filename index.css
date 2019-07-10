@@ -149,7 +149,8 @@ nav li a:hover {
     /*background-color: #fff;*/
     position: absolute;
     left: 50%;
-    margin-left: -88px;
+    /*margin-left: -88px;等价于下面那条语句*/
+    transform:translate(-50%);/*走自己宽度的一半*/
     bottom: 15px;
 }
 .circle i{
